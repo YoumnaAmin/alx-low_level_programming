@@ -2,9 +2,9 @@
 /**
  * main - start of the program
  *
- * description - program prints certain line
+ * Description: program prints certain line
  *
- * Return - zero
+ * Return: zero
 */
 
 int main(void)
