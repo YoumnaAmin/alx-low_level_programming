@@ -17,6 +17,7 @@ int main(void)
 
 	for (i = 48; i < 58; i++)
 		putchar(i);
-	printf("\n");
+	i = 10;
+	putchar(10);
 	return (0);
 }
