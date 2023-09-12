@@ -8,11 +8,11 @@
  * Return: zero
 */
 
-void print_alphabet(void)
+void print_alphabet(int m)
 {
 	int i;
 
-	for (i = 97; i < 123; i++)
+	for (i = m; i < 123; i++)
 		putchar(i);
 }
 
@@ -26,7 +26,10 @@ void print_alphabet(void)
 
 int main(void)
 {
-	print_alphabet();
+	int i;
+
+	i = 97;
+	print_alphabet(i);
 	putchar(10);
 	return (0);
 }
