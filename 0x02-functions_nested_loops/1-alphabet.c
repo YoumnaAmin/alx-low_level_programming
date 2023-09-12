@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 /**
- * main - Entry of program
+ * print_alphabet - Entry of program
  *
  * description: to print a sentence
  *
@@ -12,13 +12,21 @@ void print_alphabet(void)
 {
 	int i;
 
-	for(i = 97; i < 123; i++)
+	for (i = 97; i < 123; i++)
 		putchar(i);
 }
+
+/**
+ * main - Entry of program
+ *
+ * description: to print a sentence
+ *
+ * Return: zero
+*/
 
 int main(void)
 {
 	print_alphabet();
 	putchar(10);
-	return (0);	
+	return (0);
 }
