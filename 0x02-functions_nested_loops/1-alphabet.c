@@ -3,8 +3,6 @@
 /**
  * print_alphabet - Entry of program
  *
- * @m: character of function
- *
  * description: to print a sentence
  *
  * Return: zero
