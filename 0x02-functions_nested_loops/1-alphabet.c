@@ -31,7 +31,7 @@ int main(void)
 	int i;
 
 	i = 97;
-	print_alphabet(i);
+	print_alphabet(m);
 	putchar(10);
 	return (0);
 }
