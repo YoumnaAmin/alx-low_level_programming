@@ -10,7 +10,7 @@
  * Return: zero
 */
 
-void print_alphabet(int m)
+void print_alphabet(void)
 {
 	int i;
 
