@@ -1,5 +1,4 @@
 #include "main.h"
-#include<stdio.h>
 
 /**
  * main - Entry of program
@@ -15,7 +14,7 @@ int main(void)
 	char str[10] = "_putchar";
 
 	for (i = 0; i < 8; i++)
-		putchar(str[i]);
-	putchar(10);
+		_putchar(str[i]);
+	_putchar(10);
 	return (0);
 }
