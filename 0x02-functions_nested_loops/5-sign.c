@@ -1,4 +1,4 @@
-#include "main.h"
+#include"main.h"
 
 /**
  * print_sign - custom  function
@@ -7,24 +7,24 @@
  *
  * description: to print either 0 or c
  *
- * Return: c if scucceeded 0 if not
+ * Return: 1, 0 and -1 if scucceeded
 */
 
 int print_sign(int n)
 {
 	if (n > 0)
 	{
-		_putchar('+');
+		_putchar(43);
 		return (1);
 	}
-	if (n == 0)
+	else if (n == 0)
 	{
-		_putchar('0');
+		_putchar(48);
 		return (0);
 	}
-	if (n < 0)
+	else
 	{
-		_putchar('-');
+		_putchar(45);
 		return (-1);
 	}
 }
