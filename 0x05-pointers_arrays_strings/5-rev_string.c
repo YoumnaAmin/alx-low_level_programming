@@ -8,7 +8,7 @@
 
 void rev_string(char *s)
 {
-	int len = strlen(s);
+	const int len = strlen(s);
 	int i;
 	char s2[len];
 
