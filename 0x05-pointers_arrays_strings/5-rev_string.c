@@ -10,14 +10,12 @@ void rev_string(char *s)
 {
 	const int len = strlen(s);
 	int i;
-	char s2[len];
+	char s2;
 
-	for (i = len - 1; i >= 0; i--)
-	{
-		s2[(len - 1) - i] = s[i];
-	}
 	for (i = 0; i < len; i++)
 	{
-		s[i] = s2[i];
+		s2 = s[i];
+		s[i] = s[(len - 1) - i];
+		s[(len - 1) - i] = s2;
 	}
 }
