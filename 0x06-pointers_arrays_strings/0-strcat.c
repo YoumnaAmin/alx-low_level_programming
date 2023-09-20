@@ -1,33 +1,32 @@
 #include "main.h"
 
 /**
-* _strcat -  concatenates two strings.
-*
-* @dest: string
-* @src: string
-*
-* Return: pointer
+ * _strcat -  concatenates two strings.
+ *
+ * @dest: string
+ * @src: string
+ *
+ * Return: pointer
 */
 
 char *_strcat(char *dest, char *src)
 {
-	char result[50];
-	char *pResult = result;  // Create a pointer to the result buffer.
+	char result[50];  /* Make sure this buffer is large enough for the result.*/
+	char *pResult = result;  /*Create a pointer to the result buffer.*/
 
-	// Copy the characters from dest to result using pointers.
 	while (*dest != '\0')
 	{
 		*pResult = *dest;
 		pResult++;
 		dest++;
 	}
-
-	// Copy the characters from src to result using pointers.
-	while (*src != '\0') {
+	while (*src != '\0')
+	{
 		*pResult = *src;
 		pResult++;
 		src++;
 	}
-	*pResult = '\0'; // Null-terminate the result.
+	*pResult = '\0';
 	*dest = *pResult;
+	return (pResult);
 }
