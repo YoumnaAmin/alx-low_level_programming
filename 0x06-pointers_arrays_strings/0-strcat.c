@@ -11,22 +11,11 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char result[50];  /* Make sure this buffer is large enough for the result.*/
-	char *pResult = result;  /*Create a pointer to the result buffer.*/
+	int n1, n2;
 
-	while (*dest != '\0')
-	{
-		*pResult = *dest;
-		pResult++;
-		dest++;
-	}
-	while (*src != '\0')
-	{
-		*pResult = *src;
-		pResult++;
-		src++;
-	}
-	*pResult = '\0';
-	*dest = *pResult;
-	return (pResult);
+	for (n1 = 0; dest[n1] != '\0'; n1++)
+		;
+	for (n2 = 0; src[n2]; n2++)
+		dest[n1++] = src[n2];
+	return (dest);
 }
