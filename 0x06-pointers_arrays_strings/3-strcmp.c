@@ -3,7 +3,7 @@
 /*
  * _strcmp - compare two strings
  *
- * description: to compare betwerrn two strings
+ * Description: comparison
  *
  * @s1: string one
  * @s2: string two
