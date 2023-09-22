@@ -3,16 +3,16 @@
 /**
  * leet - encodes a string into 1337.
  *
- * @s: character
+ * @c: character
  *
  * Return: character
 */
 
-char *leet(char *s)
+char *leet(char *c)
 {
 	char *cp = c;
 
-	char key[] = {"A', 'E', 'O', 'T', 'L'};
+	char key[] = {'A', 'E', 'O', 'T', 'L'};
 
 	int value[] = {4, 3, 0, 7, 1};
 
