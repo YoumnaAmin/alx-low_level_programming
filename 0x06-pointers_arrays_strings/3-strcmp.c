@@ -1,14 +1,12 @@
 #include "main.h"
 
-/*
+/**
  * _strcmp - compare two strings
- *
- * Description: comparison
  *
  * @s1: string one
  * @s2: string two
  *
- * Return: int
+ * Return: eq
 */
 
 int _strcmp(char *s1, char *s2)
