@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * islower - capitalizes all words of a string.
@@ -8,7 +9,7 @@
  * Return: char
 */
 
-int islower(char c)
+int isLower(char c)
 {
 	return (c >= 97 && c <= 122);
 }
@@ -49,7 +50,7 @@ char *cap_string(char *s)
 	{
 		if (ischar(*s))
 			finddelim = 1;
-		else if (islower(*s) && finddelim)
+		else if (isLower(*s) && finddelim)
 		{
 			*s -= 32;
 			finddelim = 0;
