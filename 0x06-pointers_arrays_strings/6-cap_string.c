@@ -22,10 +22,10 @@ int isLower(char c)
  * Return: int
 */
 
-int ischar(char c)
+int isDelimiter(char c)
 {
 	int i;
-	char delim[] = "\t\n,.!?\"(){}";
+	char delim[] = " \t\n,.!?\"(){}";
 
 	for (i = 0; i < 12; i++)
 		if (c == delim[i])
@@ -48,7 +48,7 @@ char *cap_string(char *s)
 
 	while (*s)
 	{
-		if (ischar(*s))
+		if (isDelimiter(*s))
 			finddelim = 1;
 		else if (isLower(*s) && finddelim)
 		{
