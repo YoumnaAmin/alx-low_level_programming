@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * islower - capitalizes all words of a string.
+ * isLower - capitalizes all words of a string.
  *
  * @c: string
  *
@@ -15,7 +15,7 @@ int isLower(char c)
 }
 
 /**
- * ischar - capitalizes all words of a string.
+ * isDelimiter - capitalizes all words of a string.
  *
  * @c: string
  *
