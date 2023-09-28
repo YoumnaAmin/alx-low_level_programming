@@ -28,7 +28,7 @@ int square(int n, int y)
 	if (y * y == n)
 		return (y);
 	else if (y * y < n)
-		return (square(n + 1));
+		return (square(n, y + 1));
 	else
 		return (-1);
 }
