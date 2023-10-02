@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - to print the first command
@@ -9,7 +10,7 @@
  * Return: return zero
 */
 
-int main(int argc, char const *argv)
+int main(int argc, char const *argv[])
 {
 	(void)argc;
 	printf("%s\n", argv[0]);
