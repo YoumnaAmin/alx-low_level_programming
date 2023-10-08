@@ -23,10 +23,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{; }
 	for (j = 0; s1[j] != '\0'; j++)
 	{; }
-	ptr = malloc((*s1) + (n * sizeof(char)) + 1);
+	ptr = malloc(*s1 + n + 1);
 	if (ptr == 0)
 		return (NULL);
-	for (k = 0; ptr[k] != '\0'; k++)
+	for (k = 0; k < j; k++)
 		ptr[k] = s1[k];
 	for (; k < n + j; k++)
 		ptr[k] = s2[k - j];
