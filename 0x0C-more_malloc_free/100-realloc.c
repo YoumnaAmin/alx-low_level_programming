@@ -53,5 +53,6 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	if (ptr2 == NULL)
 		return (0);
 	_realloc2(ptr, ptr2, old_size);
+	free(ptr);
 	return (ptr2);
 }
