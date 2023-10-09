@@ -12,7 +12,7 @@
 
 char *_realloc2(char *ptr0, char *ptr1, unsigned int n)
 {
-	int i;
+	unsigned int i;
 
 	for (i = 0; i < n; i++)
 		ptr1[i] = ptr0[i];
