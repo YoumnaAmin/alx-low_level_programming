@@ -20,18 +20,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		printf("/n");
 		return;
 	}
-	for (i = 0; i < n; i++)
-	{
-		if (i != n - 1)
-			printf("%d%s", va_arg(args, int), separator);
-		else if (i == n - 1)
-			printf("%d", va_arg(args, int));
-		else if (separator == 0)
-		{
-			separator = "";
-			printf("%d%s", va_arg(args, int), separator);
-		}
-	}
-	printf("\n");
+	if (separator == 0)
+	separator = "";
+	for (i = 0; i < n - 1; i++)
+		printf("%d%s", va_arg(args, int), separator);
+	printf("%d\n", va_arg(args, int));
+
 	va_end(args);
 }
