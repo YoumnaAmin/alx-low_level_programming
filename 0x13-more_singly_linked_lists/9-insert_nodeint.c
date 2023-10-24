@@ -1,6 +1,26 @@
 #include "lists.h"
 
 /**
+ * listint_len -  returns the number of elements in a linked
+ *
+ * @h: pointer of type struct
+ *
+ * Return: unsignd int
+*/
+
+size_t listint_len(const listint_t *h)
+{
+	int c = 0;
+
+	while (h != NULL)
+	{
+		c++;
+		h = h->next;
+	}
+	return (c);
+}
+
+/**
  * insert_nodeint_at_index - inserts a new node at a given position
  * @head: pointer to head of singly linked list
  * @idx: index of the list where the new node should be added, starts at 0
