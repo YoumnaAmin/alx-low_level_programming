@@ -12,7 +12,7 @@ size_t print_listint_safe(const listint_t *head)
 	unsigned int count = 0;
 
 	tmp = head;
-	if (tmp == 0 || headb == 0)
+	if (tmp == 0 || head == 0)
 		return (0);
 
 	while (tmp != 0)
